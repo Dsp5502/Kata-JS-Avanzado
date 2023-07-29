@@ -53,7 +53,7 @@ const getPokemonTypes = async (pokemonName) => {
 const getAuthorsOfBook = async (bookTitle) => {
   try {
     const response = await fetch(
-      `http://openlibrary.org/search.json?q=${bookTitle}`
+      `https://openlibrary.org/search.json?q=${bookTitle}`
     );
 
     if (!response.ok) {
@@ -105,7 +105,7 @@ authorsOfBook.addEventListener('click', async () => {
 const getBooksByAuthor = async (authorName) => {
   try {
     const response = await fetch(
-      `http://openlibrary.org/search.json?author=${authorName}`
+      `https://openlibrary.org/search.json?author=${authorName}`
     );
 
     if (!response.ok) {
